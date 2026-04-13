@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style-type: none;
+    margin: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+button{
+    height: 30px;
+    width: 60px;
+    gap: 10px;
+    background: transparent;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+.link{
+    text-decoration: none;
+}
