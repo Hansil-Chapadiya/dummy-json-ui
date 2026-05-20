@@ -5,6 +5,17 @@ import axios from "axios";
 export type User = {
     id: number;
     firstName: string;
+    lastName: string;
+    image: string;
+    role: string;
+    email: string;
+    phone: string;
+    company?: {
+        name: string;
+    };
+    address?: {
+        city: string;
+    };
 }
 
 type UsersResponse = {
