@@ -4,7 +4,14 @@ import axios from "axios";
 
 export type Post = {
     id: number,
-    title: string
+    title: string,
+    body: string,
+    tags: string[],
+    reactions?: {
+        likes: number,
+        dislikes: number
+    },
+    views?: number
 }
 
 type PostResponse = {
