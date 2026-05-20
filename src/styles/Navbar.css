@@ -1,0 +1,110 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 16px 20px;
+    background: #ffffff;
+    border: 1px solid #eef0f3;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(16, 24, 40, 0.06);
+    position: relative;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    list-style-type: none;
+}
+
+.hamburger{
+    display: none;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #ffffff;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 6px;
+}
+
+.hamburger span{
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #111827;
+    border-radius: 2px;
+}
+
+.link{
+    text-decoration: none;
+    color: #374151;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.link:hover{
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.link.active{
+    background: #111827;
+    color: #ffffff;
+}
+
+button{
+    height: 34px;
+    padding: 0 14px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    color: #111827;
+    font-weight: 600;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    background: #f9fafb;
+    box-shadow: 0 4px 10px rgba(16, 24, 40, 0.08);
+}
+
+@media (max-width: 700px) {
+    .container{
+        align-items: center;
+        gap: 12px;
+    }
+    .nav-container{
+        position: absolute;
+        top: 56px;
+        left: 16px;
+        right: 16px;
+        flex-direction: column;
+        align-items: stretch;
+        background: #ffffff;
+        border: 1px solid #eef0f3;
+        border-radius: 12px;
+        padding: 12px;
+        box-shadow: 0 10px 20px rgba(16, 24, 40, 0.1);
+        display: none;
+    }
+
+    .nav-container.open{
+        display: flex;
+    }
+
+    .hamburger{
+        display: inline-flex;
+    }
+
+    .logout{
+        margin-left: auto;
+    }
+}
