@@ -36,7 +36,7 @@ const initialState: UserState = {
     users: [],
     loading: false,
     error: null,
-    isUserActive: false
+    isUserActive: true
 }
 
 
